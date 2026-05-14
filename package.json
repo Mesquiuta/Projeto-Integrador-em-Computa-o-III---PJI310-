@@ -1,0 +1,30 @@
+{
+  "name": "univesp-pi-padaria",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Projeto Integrador UNIVESP - Previsão de produção para redução de desperdícios em padaria",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed": "node server/services/seed.js",
+    "reset": "node -e \"require('fs').rmSync('server/data/db.json',{force:true});console.log('Banco resetado.')\"",
+    "test": "node --test tests/forecast.test.js tests/api.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "keywords": [
+    "univesp",
+    "projeto-integrador",
+    "padaria",
+    "previsao",
+    "desperdicio"
+  ],
+  "author": "",
+  "license": "MIT"
+}
